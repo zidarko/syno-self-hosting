@@ -27,17 +27,17 @@ Key hostnames:
 
 ## Folder layout on NAS
 All persistent service data lives under:
-- /volume1/docker/
+- `/volume1/docker/`
 and
-- /volume2/nvme-cache/
+- `/volume2/nvme-cache/`
 
 Example:
-- /volume1/docker/immich/
-- /volume1/docker/nextcloud/
-- /volume1/docker/traefik/
-- /volume2/nvme-cache/immich/
-- /volume2/nvme-cache/nextcloud/
-- /volume2/nvme-cache/traefik/
+- `/volume1/docker/immich/`
+- `/volume1/docker/nextcloud/`
+- `/volume1/docker/traefik/`
+- `/volume2/nvme-cache/immich/`
+- `/volume2/nvme-cache/nextcloud/`
+- `/volume2/nvme-cache/traefik/`
 
 Design rationale:
 - `/volume1` (HDD RAID1) stores all durable data and anything that must survive cache loss.
@@ -59,6 +59,7 @@ Use `env.example` templates and add your secrets locally.
 
 ## Docs
 Start here: [docs/00-overview.md](./docs/00-overview.md)
+
 Ops playbook: docs/90-ops-playbook.md
 
 ## Repo Structure

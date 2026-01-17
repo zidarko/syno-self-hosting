@@ -65,11 +65,9 @@ The stack is intentionally conservative: boring components, well-understood fail
 ## Networking Model
 
 Docker networks in use:
-- tunnel_net
-Used for Cloudflare Tunnel ↔ Traefik ↔ public-facing services.
+- `tunnel_net`: Used for Cloudflare Tunnel ↔ Traefik ↔ public-facing services.
 
-- monitoring
-Isolated network for Prometheus, Node Exporter, and Grafana.
+- `monitoring`: Isolated network for Prometheus, Node Exporter, and Grafana.
 
 ## Storage Model
 
